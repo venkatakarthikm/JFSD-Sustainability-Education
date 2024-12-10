@@ -1,0 +1,70 @@
+.donation-checkout-container {
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .donation-options {
+    margin: 20px 0;
+  }
+  
+  .donation-options button {
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .donation-options button:hover {
+    background-color: #45a049;
+  }
+  
+  .paypal-container {
+    margin-top: 30px; /* Adds space between the donation options and PayPal buttons */
+  }
+  
+  .buy-message {
+    color: red;
+    font-size: 16px;
+    margin-top: 20px;
+  }
+  
+  .content1 {
+    margin-top: 20px;
+  }
+  
+  .order-text {
+    font-size: 20px;
+    color: green;
+    margin-top: 20px;
+  }
+  
+  .circle {
+    animation: circle 2s ease-in-out forwards;
+  }
+  
+  .tick {
+    animation: tick 1s ease-in-out forwards;
+  }
+  
+  @keyframes circle {
+    0% {
+      stroke-dasharray: 0 1200;
+    }
+    100% {
+      stroke-dasharray: 1200 0;
+    }
+  }
+  
+  @keyframes tick {
+    0% {
+      stroke-dasharray: 0 100;
+    }
+    100% {
+      stroke-dasharray: 100 0;
+    }
+  }

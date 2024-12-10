@@ -1,0 +1,90 @@
+/* Container for the entire app */
+.app-container {
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+/* Title styling */
+.main-title {
+  font-size: 24px;
+  margin: 20px 0;
+  color: #333333;
+}
+
+/* Unique class names for MainNavBar component */
+.main-navbar {
+  display: flex;
+  justify-content: center; /* Centering the links in the navbar */
+  align-items: center;
+  padding: 10px 20px; /* Increased padding for larger navbar */
+  background-color: #ffffff;
+  border-bottom: 1px solid #e5e5e5;
+  font-size: 18px; /* Increased font size */
+}
+
+.main-navbar-links {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.main-navbar-link {
+  margin: 0 30px; /* Increased margin for spacing */
+  text-decoration: none;
+  color: #333333;
+  position: relative;
+  padding-bottom: 5px; /* Space for underline */
+}
+
+.main-navbar-link:hover {
+  color: #000000;
+  font-weight: bold;
+}
+
+.main-navbar-link.active::after,
+.main-navbar-link:hover::after {
+  width: 100%;
+  background-color: #000000;
+}
+
+.main-navbar-link::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 3px; /* Increased height for underline */
+  background-color: transparent;
+  transition: width 0.3s, background-color 0.3s;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+nav {
+  background: #333;
+  color: white;
+  padding: 10px;
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+nav button {
+  background: #e74c3c;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+nav a:hover, nav button:hover {
+  opacity: 0.8;
+}
